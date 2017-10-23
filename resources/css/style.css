@@ -1,6 +1,5 @@
-* {
-  font-family: Helvetica sans-serif;
-  font-size: 22px;
+body {
+  font-family: Helvetica;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -10,10 +9,12 @@
 
 header {
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
   height: 66px;
   border-bottom: 1px solid seashell;
+  font-size: 22px;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,4 +34,92 @@ nav {
 nav span {
   padding: 20px 10px;
   display: inline-block;
+
+}
+
+a {
+  color: seashell;
+  opacity: 0.9;
+}
+
+/* END HEADER */
+
+section {
+  padding-top: 67px;
+  width: 1200px;
+  margin: auto;
+}
+
+h2, h3, h4 {
+  padding: 10px;
+}
+
+.mission {
+  background-image: url(main.jpg);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission div, .locations div {
+  background-color: black;
+}
+
+/* END MISSION */
+
+.teas {
+  width: 1000px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items img {
+    height: 200px;
+    margin: 10px;
+    display: block;
+}
+
+/* END TEAS */
+
+.location-container {
+  background-image: url(locations.jpg);
+  height: 500px;
+  padding-top: 70px;
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 10px;
+  margin: 5px 20px;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* END LOCATIONS */
+
+.contact {
+  height: 200px;
+}
+
+/* END CONTACT */
+
+footer {
+  width: 100%;
+  height: 66px;
+  margin-bottom: 50px;
+  text-align: left;
 }
